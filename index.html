@@ -216,6 +216,77 @@
 
         </section>
 
+        <section class="calculadora-section">
+
+            <div class="container-calculadora-section">
+                <h2 class="h2-calculadora-section">Solicite seu orçamento de energia solar gratuito</h2>
+
+                <div class="calculadora-section-paginas">
+                    <div class="calculadora-section-paginas-1">
+                        <span class="bolinha-1 ativo">1</span>
+                        <p>Projeto</p>
+                    </div>
+
+                    <div class="linha"></div>
+
+                    <div class="calculadora-section-paginas-2">
+                        <span class="bolinha-2">2</span>
+                        <p>Contato</p>
+                    </div>
+                </div>
+
+                <!-- Etapa 1 -->
+                <div id="etapa-1" class="etapa">
+                    <label>
+                        <b>Tipo de Projeto</b>
+                        <select class="seletor-tipo-projeto">
+                            <option value="">Selecione</option>
+                            <option value="Residencial">Residencial</option>
+                            <option value="Condomínio">Condomínio</option>
+                            <option value="Empresarial">Empresarial</option>
+                            <option value="Rural">Rural</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        <b>Consumo Mensal (kWh)</b>
+                        <select class="seletor-Consumo-Mensal">
+                            <option value="">Selecione</option>
+                            <option value="250-499">250 - 499 kWh</option>
+                            <option value="500-749">500 - 749 kWh</option>
+                            <option value="750-999">750 - 999 kWh</option>
+                            <option value="1.000-2.499">1.000 - 2.499 kWh</option>
+                            <option value="2.500-4.999">2.500 - 4.999 kWh</option>
+                            <option value="5000+">Acima de 5.000 kWh</option>
+                        </select>
+                    </label>
+
+                    <button onclick="irParaEtapa2()" class="button-calculadora">Continuar &rarr;</button>
+                </div>
+
+                <!-- Etapa 2 (inicialmente oculta) -->
+                <div id="etapa-2" class="etapa" style="display: none;">
+                    <label>
+                        <b>Nome Completo</b>
+                        <input type="text" placeholder="Digite seu nome">
+                    </label>
+
+                    <label>
+                        <b>Telefone</b>
+                        <input type="tel" placeholder="(00) 00000-0000">
+                    </label>
+
+                    <label>
+                        <b>E-mail</b>
+                        <input type="email" placeholder="seu@email.com">
+                    </label>
+
+                    <button type="submit" class="button-calculadora">Enviar</button>
+                </div>
+            </div>
+        </section>
+
+
         <article>
             <div class="container-article">
                 <h2 class="h2-contatos"></h2>
@@ -244,6 +315,8 @@
                 </div>
             </div>
         </article>
+
+
 
         <footer class="footer">
             <div class="footer-conteudo">
