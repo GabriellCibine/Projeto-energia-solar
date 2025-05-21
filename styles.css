@@ -14,7 +14,7 @@ body {
 
 header {
   width: 100%;
-  background: #003366;
+  background: #154828;
   display: flex;
   position: fixed;
   top: 0;
@@ -45,7 +45,7 @@ nav {
   gap: 10px;
   padding: 5px;
   margin: 0 auto;
-  background: #004080;
+  background: #1A5630;
   border-radius: 10px;
   max-width: 400px; 
   width: 100%;
@@ -68,11 +68,11 @@ nav {
 }
 
 .links-header a:hover {
-  background: #0059b3; 
+  background: #154828; 
 }
 
 .links-header a:active {
-  background: #66a3ff; 
+  background: #4CAF50; 
   color: black; 
 }
 
@@ -99,7 +99,7 @@ nav {
   cursor: pointer;
   border-radius: 8px;
   border: none;
-  background: #FFD700;
+  background: #EF6C00;
   color: #fff;
   font-weight: bold;
   font-size: 20px;
@@ -109,11 +109,11 @@ nav {
 }
 
 .button-header button:hover {
-  background: #FFEA70; 
+  background: #F47B20; 
 }
 
 .button-header button:active {
-  background: #FFF8B0; 
+  background: #F7943D; 
   color: #000; 
 }
 
@@ -147,7 +147,7 @@ nav {
 main {
   width: 100%;
   height: auto;
- /* background-color: #66a3ff;*/
+ /* background-color: #EF6C00;*/
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -191,7 +191,7 @@ main {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* ajusta a opacidade aqui */
+  background: rgba(0, 0, 0, 0.4); /* ajusta a opacidade aqui */
   z-index: 1;
 }
 
@@ -220,7 +220,8 @@ main {
 
 .hero-conteudo-paragrafo {
   font-weight: bold;
-  color: #FFD700;
+  font-size: 20px;
+  color: #FF8000;
 }
 
 
@@ -243,7 +244,7 @@ main {
   cursor: pointer;
   border-radius: 8px;
   border: none;
-  background: #FFD700;
+  background: #EF6C00;
   color: #fff;
   font-weight: bold;
   font-size: 20px;
@@ -253,11 +254,12 @@ main {
 }
 
 .caixa-hero button:hover {
-  background: #FFEA70; 
+  background: #F47B20 
+; 
 }
 
 .caixa-hero button:active {
-  background: #FFF8B0; 
+  background: #F7943D; 
   color: #000; 
 }
 
@@ -290,7 +292,7 @@ font-weight: 600;
 }
 
 strong {
-  color: #003366;
+  color: #2D7745;
 }
 
 .porque-escolher-p {
@@ -325,7 +327,7 @@ strong {
 }
 
 .hero-projetos-paragrafo {
-  color: #003366;
+  color: #E65C00;
   font-size: 30px;
   font-weight: 500;
   margin-bottom: 30px;
@@ -435,7 +437,7 @@ strong {
 
 .Sobre-nos {
   margin-bottom: 20px;
-  color: #003366;
+  color: #1A5630;
   font-size: 35px;
   font-weight: bold;
   
@@ -449,7 +451,7 @@ strong {
 }
 
 .nossos-serviços {
-  color: #003366;
+  color: #1A5630;
   font-size: 35px;
   font-weight: bold;
   margin-bottom: 20px;
@@ -465,7 +467,7 @@ strong {
 .nossos-serviços-p2 {
   font-weight: 600;
   font-size: 20px;
-  color: #003366;
+  color: #E65C00;
 }
 
 .missao-visao-valores {
@@ -477,7 +479,7 @@ strong {
 }
 
 .h2-mvv {
-  color: #003366;
+  color: #1A5630;
   font-size: 40px;
   font-weight: bold;
 }
@@ -514,7 +516,7 @@ strong {
 }
 
 .h3-missao {
-  color: #003366;
+  color: #E65C00;
   font-weight: 600;
   font-size: 30px;
 }
@@ -549,7 +551,7 @@ strong {
 
 
 .h3-visao {
-  color: #003366;
+  color: #E65C00;
   font-weight: 600;
   font-size: 30px;
 }
@@ -581,7 +583,7 @@ strong {
 }
 
 .h3-valores {
-  color: #003366;
+  color: #E65C00;
   font-weight: 600;
   font-size: 30px;
 }
@@ -611,7 +613,7 @@ strong {
 }
 
 .nossos-serviços-h2 {
-  color: #003366;
+  color: #1A5630;
   font-size: 40px;
   font-weight: bold;
   margin-bottom: 20px;
@@ -620,6 +622,7 @@ strong {
 .arp {
   font-size: 600;
   font-size: 25px;
+  color: #E65C00;
 }
 
 .ns-padronizaçao-1 {
@@ -633,39 +636,29 @@ strong {
   
 }
 
-.ns-padronizaçao-img1 {
+.ns-padronizaçao-1-baixo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 40px;
+  margin-top: -25px;
+  gap: 40px;
+}
+
+.ns-padronizaçao-img1, .ns-padronizaçao-img2, .ns-padronizaçao-img3, .ns-padronizaçao-img4, .ns-padronizaçao-img5, .ns-padronizaçao-img6, .ns-padronizaçao-img7 {
   height: 450px;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-.ns-padronizaçao-img2 {
-  height: 450px;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
-}
-
-.ns-padronizaçao-img3 {
-  height: 450px;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
-} 
-
-
-.ns-padronizaçao-img4 {
-  height: 450px;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
-}
 
 .h3-iss {
   font-size: 600;
   font-size: 25px;
   margin-top: 30px;
+  color: #E65C00;
 }
 
 .imagens-iss {
@@ -688,6 +681,7 @@ strong {
   font-size: 600;
   font-size: 25px;
   margin-top: 60px;
+  color: #E65C00;
 }
 
 .ldm2 {
@@ -735,7 +729,7 @@ strong {
 .calculadora-section {
   margin-top: 50px;
   margin-bottom: 50px;
-  background: #003366 url('sua-imagem-de-fundo.jpg') no-repeat center center / cover;
+  background: #1A5630 url('sua-imagem-de-fundo.jpg') no-repeat center center / cover;
   width: 100%;
   min-height: 600px;
   display: flex;
@@ -755,7 +749,7 @@ strong {
 }
 
 .container-calculadora-section {
-  background: linear-gradient(180deg, rgba(0,64,128,0.85) 0%, rgba(0,64,128,0.95) 100%);
+  background: linear-gradient(180deg, rgba(21, 72, 40, 0.85) 0%, rgba(21, 72, 40, 0.95) 100%);
   border-radius: 20px;
   padding: 40px;
   width: 100%;
@@ -788,33 +782,33 @@ strong {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background-color: #FFD700; /* Amarelo */
+  background-color: #E65C00; /* Laranja */
   color: #fff;
   font-weight: bold;
   font-size: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid #FFD700; /* Contorno igual ao fundo por padrão */
+  border: 2px solid #E65C00;
   margin: 0 auto;
 }
 
 .bolinha-2 {
   background-color: transparent;
   color: white;
-  border: 2px solid #FFD700; /* Contorno amarelo */
+  border: 2px solid #E65C00;
 }
 
 .ativo {
-  background-color: #FFD700;
+  background-color: #E65C00;
   color: white;
-  border: 2px solid #FFD700;
+  border: 2px solid #E65C00;
 }
 
 .linha {
   width: 60px;
   height: 2px;
-  background-color: #1E5CE2; /* Azul forte */
+  background-color: #2D7745; /* Verde mais claro */
   align-self: center;
 }
 
@@ -843,7 +837,7 @@ input {
   border-radius: 8px;
   border: none;
   font-size: 16px;
-  background-color: #003366;
+  background-color: #1A5630; /* Verde escuro fundo */
   color: white;
   outline: none;
   transition: 0.3s;
@@ -851,11 +845,11 @@ input {
 
 select:focus,
 input:focus {
-  background-color: #004080;
+  background-color: #2D7745; /* Verde mais claro */
 }
 
 .button-calculadora {
-  background-color: #1E5CE2;
+  background-color: #2D7745; /* Verde mais claro */
   color: white;
   font-weight: bold;
   padding: 14px;
@@ -867,8 +861,9 @@ input:focus {
 }
 
 .button-calculadora:hover {
-  background-color: #154dc1;
+  background-color: #4CAF50; /* Verde folha ícone/logotipo */
 }
+
 
 
 
@@ -880,7 +875,6 @@ input:focus {
   padding: 60px 20px;
   color: white;
   text-align: center;
-  
 }
 
 .h2-contatos {
@@ -898,25 +892,23 @@ input:focus {
 }
 
 .container-contatos > div {
-  background-color: #003366;
+  background-color: #1A5630; /* Verde escuro */
   padding: 30px 20px;
   border-radius: 12px;
   width: 260px;
   transition: 0.3s;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  
 }
 
 .container-contatos > div:hover {
   transform: translateY(-5px);
-  background-color: #004080;
-  
+  background-color: #154828; /* Verde mais profundo */
 }
 
 .container-contatos h3 {
   font-size: 20px;
   margin-bottom: 10px;
-  color: #FFD700;
+  color: #E65C00; /* Laranja */
 }
 
 .container-contatos a {
@@ -927,15 +919,14 @@ input:focus {
 
 .container-contatos i {
   font-size: 30px;
-  color: #1E5CE2;
+  color: #2D7745; /* Verde folha/logotipo */
   margin-bottom: 10px;
 }
-
 
 /* === FOOTER === */
 
 .footer {
-  background-color: #001f3f;
+  background-color: #154828; /* Verde escuro do rodapé */
   color: white;
   padding: 30px 20px;
   text-align: center;
@@ -961,7 +952,7 @@ input:focus {
 }
 
 .footer-redes a {
-  color: #FFD700;
+  color: #E65C00; /* Laranja */
   font-size: 22px;
   transition: 0.3s;
 }
@@ -970,3 +961,9 @@ input:focus {
   color: #ffffff;
   transform: scale(1.2);
 }
+
+
+
+
+/* Responsivo até 900px (tablets)*/
+
