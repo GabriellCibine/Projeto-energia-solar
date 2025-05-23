@@ -120,7 +120,6 @@ if (btnContactHero) {
   btnContactHero.addEventListener('click', abrirWhatsApp);
 }
 
-/**/
 
 document.querySelectorAll('.calculator-hero, .calculator-header').forEach(button => {
   button.addEventListener('click', () => {
@@ -129,4 +128,67 @@ document.querySelectorAll('.calculator-hero, .calculator-header').forEach(button
       calculadoraSection.scrollIntoView({ behavior: 'smooth' });
     }
   });
+});
+
+
+document.querySelector('.button-calculadora').addEventListener('click', () => {
+  const tipoProjeto = document.querySelector('.calculadora-section .seletor-tipo-projeto').value;
+  const consumoMensal = document.querySelector('.calculadora-section .seletor-Consumo-Mensal').value;
+  const etapa2 = document.querySelector('.etapa-2');
+
+  if (tipoProjeto !== '' && consumoMensal !== '') {
+    // Mostrar a etapa 2
+    etapa2.style.display = 'block';
+  } else {
+    alert('Por favor, selecione o Tipo de Projeto e o Consumo Mensal antes de continuar.');
+  }
+});
+
+/**/
+
+document.querySelector('.button-calculadora[type="submit"]').addEventListener('click', (e) => {
+  e.preventDefault(); // Impede envio real do formulário
+
+  const tipoProjeto = document.querySelector('.seletor-tipo-projeto').value;
+  const consumoMensal = document.querySelector('.seletor-Consumo-Mensal').value;
+  const nome = document.querySelector('input[placeholder="Digite seu nome"]').value.trim();
+  const telefone = document.querySelector('input[placeholder="(00) 00000-0000"]').value.trim();
+  const email = document.querySelector('input[placeholder="seu@email.com"]').value.trim();
+
+  if (!tipoProjeto || !consumoMensal || !nome || !telefone || !email) {
+    alert('Por favor, preencha todos os campos antes de enviar.');
+    return;
+  }
+
+  const mensagem = `Tipo de projeto: ${tipoProjeto}%0A` +
+                   `Consumo mensal em (kWh): ${consumoMensal}%0A` +
+                   `Me chamo: ${nome}%0A` +
+                   `Meu contato: ${telefone}%0A` +
+                   `Meu e-mail: ${email}`;
+
+  const telefoneWhatsApp = '5516997933419';
+  const urlWhatsApp = `https://wa.me/${telefoneWhatsApp}?text=${mensagem}`;
+
+  window.open(urlWhatsApp, '_blank');
+});
+
+// Máscara para telefone (formato BR)
+document.querySelector('.input-telefone').addEventListener('input', function (e) {
+    let value = e.target.value.replace(/\D/g, '');
+
+    if (value.length > 11) {
+        value = value.slice(0, 11);
+    }
+
+    if (value.length > 0) {
+        value = value.replace(/^(\d{2})(\d)/g, '($1) $2');
+    }
+
+    if (value.length > 9) {
+        value = value.replace(/(\d{5})(\d{4})$/, '$1-$2');
+    } else if (value.length > 5) {
+        value = value.replace(/(\d{4})(\d)/, '$1-$2');
+    }
+
+    e.target.value = value;
 });

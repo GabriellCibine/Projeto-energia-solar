@@ -1041,6 +1041,19 @@ input:focus {
   transform: scale(1.2);
 }
 
+.footer-info h2 {
+  margin: 0;
+  font-size: 20px;
+  color: white;
+}
+
+.footer-info p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #ccc;
+  text-align: center;
+}
+
 
 
 
