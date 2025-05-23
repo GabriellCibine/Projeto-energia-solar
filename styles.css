@@ -1096,7 +1096,7 @@ nav {
 }
 
 /* ✅ MOSTRA NAS TELAS MAIORES */
-@media (min-width: 901px) {
+@media (min-width: 1101px) {
   .hero-galeria .extra {
     display: block;
   }
@@ -1106,7 +1106,7 @@ nav {
 
 /* Cada link ocupa mesmo espaço */
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   header {
     padding: 10px 15px;
     /* menos padding para caber melhor */
@@ -1513,7 +1513,7 @@ nav {
 
 
 
-@media (max-width: 400px) {
+@media (max-width: 780px) {
 
   /* Reset básico */
   html,
