@@ -142,9 +142,6 @@ nav {
 
 }
 
-
-
-
 /*fim da estilização do header*/
 
 
@@ -582,8 +579,6 @@ strong {
   transform: scale(1.02);
 }
 
-
-
 .h3-visao {
   color: #E65C00;
   font-weight: 600;
@@ -739,6 +734,31 @@ strong {
   display: none;
 }
 
+/* Mostra quando ativado */
+.extra-iss.mostrar-iss {
+  display: flex;
+}
+
+/* Estilo horizontal para .imagens-iss-2 */
+.imagens-iss-2 {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.imagens-iss-2 img {
+  display: flex;
+  gap: 40px;
+  width: 540px;
+  height: 600px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+.img-iss4 {
+  margin-left: 20px;
+}
 
 .ldm {
   font-size: 600;
@@ -942,9 +962,6 @@ input:focus {
   /* Verde folha ícone/logotipo */
 }
 
-
-
-
 /* fim da calculadora */
 
 /* === CONTATOS === */
@@ -1059,9 +1076,6 @@ input:focus {
   text-align: center;
 }
 
-
-
-
 /* Responsivo até 900px (tablets)*/
 
 * {
@@ -1094,9 +1108,6 @@ header {
 
 }
 
-
-
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -1123,7 +1134,6 @@ nav {
     display: block;
   }
 }
-
 
 
 /* Cada link ocupa mesmo espaço */
@@ -1417,31 +1427,6 @@ nav {
     /* menor espaçamento para telas pequenas */
   }
 
-  /* Botão visível apenas em telas pequenas */
-  .imagens-iss {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    margin-top: 40px;
-  }
-
-  .imagens-iss img {
-    width: 100%;
-    max-width: 550px;
-    /* Aumentado em ~15% */
-    height: auto;
-  }
-
-  .extra-iss {
-    display: none;
-  }
-
-  .extra-iss.mostrar-iss {
-    display: block;
-  }
-
-
-
   .ver-mais-btn-ns {
     display: block;
     margin: 20px auto 60px auto;
@@ -1453,6 +1438,40 @@ nav {
     cursor: pointer;
     width: fit-content;
     transition: background-color 0.3s ease;
+    
+  }
+
+  /* Botão visível apenas em telas pequenas */
+  .imagens-iss {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+  }
+
+  .imagens-iss img {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+  }
+
+  .imagens-iss-2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img-iss4 {
+    margin-left: 0;
+  }
+
+  .extra-iss {
+    display: none;
+  }
+
+  .extra-iss.mostrar-iss {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .ver-mais-btn-iss {
@@ -1494,6 +1513,11 @@ nav {
     margin: 0 auto;
   }
 
+  .imagens-ldm-full img {
+    width: 550px;
+    height: 600px;
+  }
+
   .extra-ldm {
     display: none;
   }
@@ -1515,8 +1539,6 @@ nav {
     transition: background-color 0.3s ease;
   }
 
-
-
   body,
   html {
     overflow-x: hidden;
@@ -1528,13 +1550,7 @@ nav {
 }
 
 
-
 /*telas pequenas*/
-
-
-
-
-
 @media (max-width: 780px) {
 
   /* Reset básico */
@@ -1810,10 +1826,56 @@ nav {
     margin-top: -20px;
   }
 
+ .imagens-iss {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+  }
+
+  .imagens-iss img {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+  }
+
+  .imagens-iss-2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imagens-iss-2 img {
+    width: 310px;
+    height: 460px;
+  }
+
+  .extra-iss {
+    display: none;
+  }
+
+  .extra-iss.mostrar-iss {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ver-mais-btn-iss {
+    display: block;
+    margin: 20px auto 60px auto;
+    background-color: #2D7745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    width: fit-content;
+    transition: background-color 0.3s ease;
+  }
+
   /**/
   .imagens-ldm-full .extra-ldm {
     height: 420px;
-    width: 350px;
+    width: 310px;
   }
 
   /**/

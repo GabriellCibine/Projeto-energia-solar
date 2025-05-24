@@ -45,14 +45,63 @@ if (verMaisBtnNS) {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /**/
+
+
 const btnISS = document.querySelector('.ver-mais-btn-iss');
-const imgISS = document.querySelector('.img-iss2');
+const imagensISSExtras = document.querySelectorAll('.extra-iss');
 
 btnISS.addEventListener('click', () => {
-  imgISS.classList.toggle('mostrar-iss');
-  btnISS.textContent = imgISS.classList.contains('mostrar-iss') ? 'Ver menos' : 'Ver mais';
+  const mostrando = [...imagensISSExtras].some(img => img.classList.contains('mostrar-iss'));
+
+  imagensISSExtras.forEach(img => {
+    img.classList.toggle('mostrar-iss', !mostrando);
+  });
+
+  btnISS.textContent = mostrando ? 'Ver mais' : 'Ver menos';
+
+  if (!mostrando) {
+    setTimeout(() => {
+      btnISS.scrollIntoView({ behavior: 'smooth', block: 'end' });
+    }, 300);
+  }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /**/
